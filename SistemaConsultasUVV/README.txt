@@ -204,7 +204,7 @@ Senha: 123456
 
 Vídeo demonstrando o funcionamento do sistema:
 
-**[INSIRA AQUI O LINK DO VÍDEO]**
+https://youtu.be/3ddzUCecU5Y
 
 O vídeo demonstra:
 
