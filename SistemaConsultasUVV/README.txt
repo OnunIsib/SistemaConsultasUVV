@@ -1,6 +1,4 @@
 ﻿# Sistema de Gestão de Consultas UVV
-Trabalho feito por Nuno Bisi Bolsanello para a disciplina de Desenvolvimento Web Back-end da UVV.
-Matricula 202526921
 
 Sistema web desenvolvido em C# com ASP.NET Core MVC para gerenciamento de consultas.
 
