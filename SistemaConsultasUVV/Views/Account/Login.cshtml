@@ -1,0 +1,70 @@
+﻿@model SistemaConsultasUVV.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+
+            <h2 class="mb-4">
+                Sistema de Consultas UVV
+            </h2>
+
+            <form asp-action="Login" method="post">
+
+                <div asp-validation-summary="ModelOnly"
+                     class="text-danger">
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email"
+                           class="form-label">
+                    </label>
+
+                    <input asp-for="Email"
+                           class="form-control" />
+
+                    <span asp-validation-for="Email"
+                          class="text-danger">
+                    </span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Senha"
+                           class="form-label">
+                    </label>
+
+                    <input asp-for="Senha"
+                           class="form-control"
+                           type="password" />
+
+                    <span asp-validation-for="Senha"
+                          class="text-danger">
+                    </span>
+                </div>
+
+                <button type="submit"
+                        class="btn btn-primary w-100">
+                    Entrar
+                </button>
+
+            </form>
+
+            <div class="text-center mt-3">
+                <a asp-action="Cadastro">
+                    Criar nova conta
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync(
+            "_ValidationScriptsPartial");
+    }
+}
